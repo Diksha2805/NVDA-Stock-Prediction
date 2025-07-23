@@ -1,22 +1,22 @@
 # 📘 NVIDIA Stock Price Prediction using ARIMA & LSTM
 
-This project predicts NVIDIA (NVDA) stock prices using **time series forecasting techniques**. It applies both a traditional statistical model (ARIMA) and a deep learning model (LSTM) to forecast and compare performance. The dataset is downloaded automatically from Yahoo Finance.
+This project forecasts NVIDIA (NVDA) stock prices using time series techniques: a traditional statistical model (**ARIMA**) and a deep learning model (**LSTM**) for comparison. Historical data is fetched directly from Yahoo Finance.
 
 ---
 
 ## ✨ Features
-- 📥 Downloads historical NVDA stock data via `yfinance`
+- 📥 Automatically downloads NVDA historical stock data via `yfinance`
 - 📊 Visualizes stock closing prices over time
 - 🔥 Implements ARIMA for statistical forecasting
-- 🤖 Uses LSTM (Long Short-Term Memory) networks for deep learning-based prediction
-- 📈 Compares actual vs predicted prices for both models
-- 🧮 Calculates Mean Squared Error (MSE) to evaluate performance
+- 🤖 Uses LSTM (Long Short-Term Memory) for deep learning prediction
+- 📈 Compares actual vs predicted stock prices
+- 🧮 Calculates Mean Squared Error (MSE) for performance evaluation
 
 ---
 
 ## ⚙️ Tech Stack
-- Python 3.x
-- Libraries: 
+- **Language:** Python 3.x
+- **Libraries:**
   - `yfinance`
   - `numpy`
   - `pandas`
@@ -28,35 +28,18 @@ This project predicts NVIDIA (NVDA) stock prices using **time series forecasting
 ---
 
 ## 🚀 How to Run
-1. Clone this repository or download the ZIP.
-2. Install dependencies:
-pip install -r requirements.txt
+- Install dependencies:
+  ```bash
+  pip install -r requirements.txt
 
-markdown
-Copy
-Edit
-3. Run the script:
+Run the script:
 python Main.py
+View visualizations and prediction results in the console or pop-up plots.
 
-yaml
-Copy
-Edit
-4. View visualizations and prediction results.
-
----
-
-## 📂 Project Structure
-├── Main.py # Main script for downloading data, training models, and plotting results
-├── NVDA_stock_data.csv # Historical NVIDIA stock dataset
-├── README.md # Project documentation
+📁 NVIDIA_Stock_Prediction/
+├── Main.py                         # Script for data download, modeling, and visualization
+├── NVDA_stock_data.csv             # Historical stock data (auto-generated)
+├── README.md                       # Project documentation
 ├── README_NVDA_Stock_Prediction.pdf # PDF version of README
-└── requirements.txt # List of Python dependencies
+└── requirements.txt                # Python dependencies
 
-yaml
-Copy
-Edit
-
----
-
-## 📜 License
-This project is licensed under the MIT License - see the LICENSE file for details.
